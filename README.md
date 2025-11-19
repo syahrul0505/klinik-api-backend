@@ -3,7 +3,7 @@
 
 Untuk melakukan pengetesan API, silakan import Postman Collection berikut:
 
-- [Download Postman Collection](./postman/klinik-api.postman_collection.json)
+- [Download Koleksi Postman](./postman/Klinik%20API.postman_collection.json)
 
 ### Cara Import di Postman:
 1. Buka Postman
