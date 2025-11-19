@@ -1,0 +1,6 @@
+.list-product {
+    height: 89vh !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+

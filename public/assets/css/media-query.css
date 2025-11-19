@@ -1,0 +1,163 @@
+@media(max-width:767px){
+	.container{
+		max-width: initial;
+	}
+}
+@media(max-width:450px){
+	.payment-method-checkoutpage-full,
+	.select-category,
+	.review-desc,
+	#homepage1-tab,
+	#no-result-tab  {
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+}
+@media(max-width:400px){
+	.modal-content.checkout-modal-content {
+		width: 325px;
+		height: auto;
+		margin: auto;
+	}
+}
+@media(max-width:320px){
+	.shape{
+		width: 60px;
+		height: 60px;
+	}
+	.tab-home1-txt1{
+		font-size: 12px;
+	}
+	.sign-with-password-btn a,
+	.sign-in-btn a,
+	.confirm-order-btn button,
+	.send-instruction-btn a,
+	.change-password-btn a,
+	.open-email-btn a,
+	.verify-btn a,
+	.allow-btn a,
+	.next-btn a,
+	.add-to-cart-cloth-btn a,
+	.sure-log-out-btn a,
+	.cancel-log-out-btn a,
+	.procode-btn a,
+	.new-add-btn a,
+	.success-track-btn a,
+	.success-home a ,
+	.add-address-btn a,
+	.add-btn-wallet a,
+	.filter-btn a,
+	.inter-next-btn a,
+	.shop-now-btn a,
+	.add-my-card-btn a,
+	.apply-code-btn a,
+	.shop-now-empty-btn a,
+	.onboarding-next-btn a,
+	.feedback-btn a{
+		width: 290px;
+
+	}
+	.addhome-btn{
+		width: 290px;
+	}
+	.offer1-slider .carousel-item{
+		padding-left: 20px;
+	}
+	.cloths-fifth-sec-full{
+		display: block;
+	}
+	.color-section{
+		margin-top: 20px;
+	}
+	.shoes-screen-full {
+		display: block;
+	}
+	.shoes-screen-wrapper {
+		margin-top: 16px;
+	}
+	nav{
+		column-gap: 14px;
+	}
+	.wishlist-wrapper-full {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.seller-content-modal,
+	#checkout-modal .checkout-modal-content,
+	#checkout-modal-payment .checkout-modal-content,
+	.finger-modal-content {
+		width: 280px !important;
+	}
+	.brand-details img{
+		width: 100%;
+	}
+	.shoes-screen-second{
+		margin-top: 5px;
+	}
+	.finger-img-sec img{
+		width: 100%;
+	}
+	.finger-content-sec h2{
+		font-size: 30px;
+	}
+	.add-image{
+		width: 120px;
+	}
+	.add-image-sec:before{
+		left: 6px;
+	}
+	.review-second-sec-full h1{
+		font-size: 30px;
+	}
+	.ongoing-status-sec-full{
+		display: block;
+	}
+	.ongoing-img-sec{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.status-price-sec-full{
+		justify-content: unset;
+		column-gap: 16px;
+	}
+	.ongoing-content-sec-full{
+		margin-top: 10px;
+	}
+	.order-txt1{
+		font-size: 13px;
+	}
+	.proceed-to.check-btn a{
+		width: 180px;
+		font-size: 16px;
+	}
+	.home3-third-sec-bottom-full {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+	}
+	.home1-tab-img{
+		height: auto;
+	}
+	.nested-accordion h3,
+	.nested-accordion h3.selected,
+	.faq-txt1,
+	.faq-txt1.selected{
+		font-size: 15px !important;
+	}
+	.header-heading {
+		padding: 30px 0 0 0;
+	}
+	.finger-print-sec-btn-wrapp{
+		padding: 0 16px;
+	}
+	.print-skip-btn, .print-continue-btn{
+		width: 100%;
+	}
+	.print-skip-btn a,
+	.print-continue-btn a{
+		width: 100%;
+	}
+	#seller-screen .shoes-screen-wrapper{
+		margin-top: 0;
+	}
+}

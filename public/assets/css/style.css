@@ -1,0 +1,5195 @@
+/*------------------------------------------------------------------
+Project: Zoop Retail Store
+Author: The_Krishna
+Last change: 31 July, 2023
+Primary use: Multipurpose eCommerce Mobile App
+-------------------------------------------------------------------*/
+
+/*----------------Table of contents Start---------------------------
+
+1.Default CSS
+2.Animation CSS
+3.Splash Screen CSS
+4.Onboarding-Screen CSS
+5.Let You Screen CSS
+6.Sign In Screen CSS
+7.Forget Password Screen CSS
+8.Verify Number Screen CSS
+9.Check Mail Screen CSS
+10.Notification Allow Screen CSS
+11.Account Created Screen CSS
+12.No result Found Screen CSS
+13.Order Successfull Screen CSS
+14.Preferred Language Screen CSS
+15.Choose Interest Screen CSS
+16.Homescreen1 CSS
+17.Tabbar CSS
+18.Language Screen CSS
+19.Currency Screen CSS
+20.Faq Screen
+21.Friend Invite Screen CSS
+22.Category Screen CSS
+23.Choose Brand Screen CSS
+24.Offer Page Screen CSS
+25.Empty Cart Screen CSS
+26.Cart Without Promocode Screen CSS
+27.Log-out Screen CSS
+28.Checkout screen
+29.Account Screen CSS
+30.Address Screen CSS
+31.Filter Screen CSS
+32.Best Seller CSS
+33.Contact Us CSS
+34.Privacy Page CSS
+35.Finger print CSS
+36.Review Screen CSS
+37.About-Us CSS
+38.Single Clothes Screen CSS
+39.Shoes Screen CSS
+40.Setting Screen CSS
+41.Payment Screen CSS
+42.Notification Option Screen CSS
+43.Notification
+44.Track Order Screen
+45.My Order Screen 2
+46.Homescreen2
+47.Profile Edit
+48.Add New Address
+49.Leave Review Screen CSS
+50.Wallet Screen
+51.Preloader
+52.Tabbar CSS
+53.Datepiker CSS
+54.Feedback Screen CSS
+55.Finger Print Loader Screen CSS
+
+---------Table of contents End-----------------------------------*/
+
+/*------------------------ [Color codes] ------------------------
+
+Background:     #ffffff ,#F0F0F0,#FF4C3B
+Content:        #707070, #000
+-------------------------------------------------------------------*/
+
+/************************ 1.Default CSS ***************************/
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    max-width: 600px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.mt-32{
+    margin-top: 32px;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-24{
+    margin-top: 24px;
+}
+.mt-12{
+    margin-top: 12px;
+}
+svg{
+    vertical-align: middle;
+}
+input{
+    outline-width: 0;
+    outline-offset: 0;
+    outline: 0;
+}
+textarea{
+  outline-width: 0;
+  outline-offset: 0;
+  outline: 0;
+}
+.container{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.fixed {
+   position: fixed;
+   z-index: 2;
+   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   top: 0%;
+   -webkit-box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
+   box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
+   -webkit-animation: fixedheader 600ms ease 0ms 1 forwards;
+   animation: fixedheader 600ms ease 0ms 1 forwards;
+}
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/************************ 2.Animation CSS ***************************/
+@keyframes fixedheader {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes sk-circleFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/************************ 3.Splash Screen CSS ***************************/
+#about-us-screen,
+#privacy-page,
+#contact-us-page,
+#invite-friend-page,
+#notification-option-screen,
+#setting-page,
+#notification-page,
+#review-page-sec,
+#offer-page,
+#shoes-screen,
+#verify-screen,
+#leave-review-screen,
+#seller-screen,
+#currency-page,
+#language-screen,
+#order2-screen,
+#profile-edit,
+#track-order-page,
+#promocode2-screen,
+#faq-sec{
+    margin-bottom: 16px;
+}
+.sign-with-password-btn a,
+.sign-in-btn a,
+.send-instruction-btn a,
+.change-password-btn a,
+.open-email-btn a,
+.verify-btn a,
+.allow-btn a,
+.shop-now-btn a,
+.next-btn a,
+.onboarding-next-btn a,
+.inter-next-btn a,
+.add-to-cart-cloth-btn a,
+.confirm-order-btn button,
+.success-home a ,
+.update-change-btn a,
+.add-btn-wallet a,
+.add-my-card-btn a,
+.new-add-btn a,
+.add-address-btn a,
+.procode-btn a,
+.cancel-log-out-btn a,
+.apply-code-btn a,
+.filter-btn a,
+.add-new-card-btn a,
+.feedback-btn a {
+    width: 337px;
+    border-radius: 8px;
+    background: #FF4C3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: auto;
+}
+.back-btn:focus-visible{
+    outline: none !important;
+}
+.splash-screen-title {
+    color: #000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+}
+.splash-screen-subtitle {
+    color: #707070;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 15px;
+}
+.splash-screen-logo {
+    display: block;
+    text-align: center;
+}
+#splash-screen-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#FFF;
+}
+
+/************************ 4.Onboarding-Screen CSS ***************************/
+.Onboarding-Screen-1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.slide1{
+   background-image: url(../images/onboarding-screen/onboarding-1.png);
+}
+.slide2{
+   background-image: url(../images/onboarding-screen/onboarding-2.png);
+}
+.slide3{
+   background-image: url(../images/onboarding-screen/onboarding-3.png);
+}
+.skip_btn-onboading {
+    color: #FFF;
+    text-align: right;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 0 16px;
+    padding-top: 30px;
+}
+.skip_btn-onboading a{
+  color: #FFF;
+}
+.overlay-onboading {
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 61.67%, #000 100%);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+}
+.Onboarding-Screen-1-full {
+    position: relative;
+    height: 100vh;
+}
+.boarding-title {
+    position: absolute;
+    bottom: 200px;
+}
+.custom-slider-dots {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 8px !important;
+    border: none !important;
+    background: #F44336 !important;
+}
+.custom-slider-btn .active{
+    width: 28px !important;
+}
+.custom-slider-btn{
+    position: absolute;
+    right: 0;
+    bottom:140px;
+    z-index: 2;
+    padding: 0;
+    margin:0 !important;
+    list-style: none;
+    height: fit-content;
+}
+.onboarding-slider .carousel-indicators [data-bs-target]{
+    background: white !important;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.boarding-title h1 {
+    color:#FFF;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.onboarding-next-btn {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 16px;
+    z-index: 5;
+}
+
+/************************ 5.Let You Screen CSS ***************************/
+.header-heading h1 {
+    color: #FFF;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+#let-yoy-page-section{
+    position: relative;
+}
+.let-yoy-page-section-full {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 0 16px;
+}
+.back-btn-page {
+    padding-top: 30px;
+}
+.header-heading {
+    padding: 40px 0 0 0;
+}
+.overlay {
+    background: rgb(0 0 0 / 60%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.social-icon {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #F0F0F0;
+    text-align: center;
+}
+.social-txt {
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.social-icon-img {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.let-social-media-sec-full{
+    margin-top: 32px;
+}
+.or-section p {
+    overflow: hidden;
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.or-section{
+    margin-top: 32px;
+}
+.or-section p:before,
+.or-section p:after {
+   background:#F0F0F0;
+   content: "";
+   display: inline-block;
+   height: 2px;
+   position: relative;
+   vertical-align: middle;
+   width: 50%;
+}
+.or-section p:before {
+    right: 8px;
+    margin-left: -50%;
+}
+.or-section p:after {
+    left:8px;
+    margin-right: -50%;
+}
+.sign-with-password-btn,
+.sign-in-btn {
+    margin-top: 32px;
+}
+.block-footer p {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.block-footer a {
+    color:#000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+#let-you-footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: white;
+    padding: 16px 0;
+    z-index: 99;
+}
+#let-social-media-sec,
+#sign-in-section-page,
+#notification-screen
+{
+    margin-bottom: 60px;
+}
+#mobile_code {
+    margin-left: 20px;
+    padding-right: 0;
+}
+.iti__arrow:before{
+    content: url(../svg/faq-up.svg) !important;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding-left: 12px;
+    margin-left: 12px !important
+}
+.iti__arrow{
+    border:0 !important;
+    margin-left: 12px !important
+}
+.iti{
+    display: flex !important;
+}
+.mobile-form {
+    border-radius: 8px;
+    background: #F0F0F0;
+    padding: 12px;
+}
+
+/************************ 6.Sign In Screen CSS ***************************/
+.sign-in-custom-input{
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding-left: 12px;
+    color:#707070;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.white-icon{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(7500%) hue-rotate(213deg) brightness(127%) contrast(103%);
+}
+.form-details-sign-in {
+    border-radius: 8px;
+    background: #F0F0F0;
+    padding: 12px;
+    display: flex;
+}
+.sign-in-full-section{
+    padding-top: 32px;
+}
+#eye,#eye1
+{
+    color: #707070;
+    line-height: inherit;
+}
+.footer-checkbox-input + .footer-chec-txt:before {
+  content: "";
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+.footer-checkbox-input:checked + .footer-chec-txt:before {
+  background: #FF4C3B;
+  border: none;
+}
+.footer-checkbox-input:checked + .footer-chec-txt:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+.footer-checkbox-input{
+  position: absolute;
+  opacity: 0;
+}
+.footer-checkbox-input+ .footer-chec-txt {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+.footer-chec-txt {
+    color: #707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.forget-btn a {
+    color: #000;
+    text-align: right;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.remember-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.sign-in-social-media-deatails {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px solid #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-in-social-media-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 32px;
+}
+.change-password-btn,
+.send-instruction-btn {
+    background: white;
+    padding-bottom: 16px;
+}
+
+/************************ 7.Forget Password Screen CSS ***************************/
+.header-title p {
+    color:#000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+.top-header-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 0;
+}
+#top-header,
+#top-navbar{
+    background: white;
+    max-width: 600px;
+}
+.header-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+.forget-password-screen-top p {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.back-btn,
+.back-btn a {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+/************************ 8.Verify Number Screen CSS ***************************/
+.otp-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 11px;
+}
+.otp-resend{
+    text-align:right ;
+}
+.otp-section input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #F0F0F0;
+    text-align: center;
+    padding: 10px;
+    color: #707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.otp:focus{
+    border: 1px solid #FF4C3B;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.24));
+    box-shadow: none;
+}
+.resend-txt1 {
+    color: #707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.resend-txt2 a {
+    color: #000;
+    font-weight: 600;
+}
+.otp-timer {
+    display: inline-block;
+    padding: 25px 18px;
+    background: #FFFFFF;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.otp-timer .border {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px dashed #F0F0F0 !important;
+}
+.timer-counter-content {
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.otp-left {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 4px;
+}
+.counter-sec {
+    padding-top: 165px;
+}
+
+/************************ 9.Check Mail Screen CSS ***************************/
+#check-mail-screen{
+    margin-top: 70px;
+}
+.check-mail-img{
+    text-align: center;
+}
+.check-mail-content{
+    margin-top: 32px;
+}
+.check-mail-content h1 {
+    color: #000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+#checkmail-footer {
+    background: white;
+    padding-bottom: 16px;
+    margin-top: 32px;
+}
+.check-mail-content p {
+    color: #707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 16px;
+    line-height: 24px;
+}
+.open-email-skip-btn a {
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.open-email-skip-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+/************************ 10.Notification Allow Screen CSS ***************************/
+.skip-section {
+  padding: 8px 0;
+}
+.skip-btn a {
+    color:#707070;
+    text-align: right;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.skip-btn {
+    display: flex;
+    margin-left: auto;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+}
+.notification-img{
+    text-align: center;
+    margin-top: 42px;
+}
+.allow-btn,
+.shop-now-btn,
+.next-btn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 16px 0;
+    background: white;
+}
+
+/************************ 11.Account Created Screen CSS ***************************/
+#account-created-screen,
+#homescreen1-deatils-page,
+#home2-screen
+{
+    margin-bottom: 90px;
+}
+
+/************************ 12.No result Found Screen CSS ***************************/
+.search-iconn, .coupon-iconn {
+    border-radius: 8px;
+    background:#F0F0F0;
+    border: none;
+    padding: 14px 0 14px 16px !important;
+}
+.no-result-main .search-filter-btn img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(7500%) hue-rotate(213deg) brightness(127%) contrast(103%);
+}
+.search-text {
+    background:#F0F0F0 !important;
+    padding: 12px !important;
+    border: none;
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.search-text::placeholder{
+    color:#707070 ;
+}
+.search-iconn:focus-visible, .search-text:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+input:-internal-autofill-selected{
+    background: transparent !important;
+}
+.search-filter-btn a {
+    border-radius: 8px;
+    background:#FF4C3B;
+    padding: 12px;
+    display: inline-block;
+}
+.noresult-screen-full{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-top: 32px;
+}
+#no-result-tab {
+    flex-wrap: nowrap !important;
+    margin-left: 16px;
+    margin-bottom: 16px !important;
+    padding-right: 16px;
+}
+#no-result-tab li{
+    margin-left: 12px;
+}
+#no-result-tab li:first-child{
+    margin-left: 0;
+}
+.noresult-screen-details{
+    margin-top: 24px;
+}
+.noresult-content h2 {
+    color:#000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.noresult-content p {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 16px;
+}
+.noresult-img{
+    margin-top: 16px;
+    text-align: center;
+}
+.noresult-content{
+    margin-top: 24px;
+}
+#noresult-screen{
+    margin-bottom: 100px;
+}
+
+/************************ 13.Order Successfull Screen CSS ***************************/
+.oder-success-screen-full{
+    margin-top: 32px;
+}
+.oder-success-content-full h1 {
+    color:#000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.oder-success-img img {
+    mix-blend-mode: darken;
+}
+.oder-success-content-full p {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 12px;
+}
+.success-track-btn a {
+    width: 343px;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px solid #FF4C3B;
+    display: inline-block;
+    padding: 12px 0;
+    color: #FF4C3B;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.success-track-btn,
+.success-home,
+.procode-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.success-home{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    padding: 16px 0;
+}
+.success-track-btn {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 80px;
+    background: white;
+}
+#oder-success-screen{
+    margin-bottom: 144px;
+}
+.procode-btn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    padding-bottom: 16px;
+}
+#Promocode-screen{
+    position: relative;
+    margin-bottom: 80px;
+}
+.promocode-copon{
+    margin-top: 32px;
+}
+.coupon-txt {
+    color:#707070;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    background:#F0F0F0;
+    border: navajowhite;
+}
+.coupon-txt:focus{
+    box-shadow: none;
+    background:#F0F0F0;
+}
+.coupon-txt:placeholder{
+    color:#707070;
+}
+.promocode2-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #F0F0F0;
+    padding: 16px;
+}
+.apple-code-txt1 {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 12px;
+}
+.apple-code-txt2 {
+    color: #707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 12px;
+}
+.apple-code-txt3 {
+    color: #707070;
+    text-align: right;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 12px;
+}
+.apply-code-btn{
+    margin-top: 12px;
+}
+.copied-img {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-left: auto;
+}
+.color-red {
+    color:#ED0006;
+}
+.shoes-img.wishlist-img {
+    height: 120px;
+}
+.wishlist-wrapper-full {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+
+/************************ 14.Preferred Language Screen CSS ***************************/
+.select-lang-sec{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 16px;
+}
+.lang-sec input[type="radio"] {
+  display: none;
+}
+.lang-sec input[type="radio"]:checked + label {
+ background: #1E293B;
+ border-radius: 8px;
+ color: white;
+ border: 2px solid transparent;
+}
+label.custom-radio-sel-lang {
+    padding: 11px 16px;
+    border: 2px solid #F0F0F0;
+    border-radius: 8px;
+    cursor: pointer;
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.text-reset:focus{
+    box-shadow: none !important;
+}
+.hey-txt {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 30px;
+}
+.select-lang {
+    color: #707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 16px;
+}
+#select-language-page,
+#wishlist-section,
+#empty-cart-page{
+    margin-bottom: 90px;
+}
+.custom-bg-interest {
+    border: none !important;
+    border-radius: 4px !important;
+    background:#F0F0F0;
+}
+.lang-sec input[type="checkbox"] {
+    display: none;
+}
+.lang-sec input[type="checkbox"]:checked + label {
+    background: #1E293B;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid transparent;
+}
+.inter-next-btn{
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 16px;
+    background: white;
+    width: 100%;
+    left: 0;
+}
+#interest-page{
+    margin-bottom: 95px;
+}
+
+/************************ 15.Choose Interest Screen CSS ***************************/
+.top-navbar_full {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 0;
+}
+.top-navbar-title p {
+    color: #000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+.skip_btn a {
+    color:#707070;
+    text-align: right;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.navbar-boder {
+    background:#F0F0F0;
+    height: 1px;
+}
+.interest-page-top p{
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+input.select-interest-custom-input {
+    appearance: none;
+}
+
+/************************ 16.Homescreen1 CSS ***************************/
+.logo-popup {
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.homescreen1-main .view-all-txt span img {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(0%) saturate(1272%) hue-rotate(183deg) brightness(93%) contrast(83%);
+}
+.plus-bnt-home1 img{
+ filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(161deg) brightness(103%) contrast(104%);
+}
+.addtohome-popup p.title {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #1E293B;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+.addtohome-popup p {
+    margin-bottom: 24px;
+   font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #666666;
+    text-align: center;
+}
+.addhome-btn {
+    width: 343px;
+    border-radius: 8px;
+    background: #FF4C3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: auto;
+}
+a.addhome-btn {
+    color: #ffffff;
+}
+.popup-close-home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+.offcanvas.offcanvas-bottom {
+    border-radius: 0.625rem 0.625rem 0 0;
+    height: unset;
+    border-top: 0;
+}
+.home1-txt1 {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+.home1-txt2 {
+    color: #707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 4px;
+}
+.homescreen-second-wrapper-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home1-txt3 {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+.view-all-txt {
+    color: #707070;
+    text-align: right;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.category-slide-content h4,
+.category-content-sec h4 {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.category-slide-content h5,
+.category-content-sec h5 {
+    color: #707070;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 4px;
+}
+.category-slide-content{
+    margin-top: 10px;
+}
+.homescreen-second-wrapper-slider .slick-track,
+.homescreen-fourth-wrapper-slider .slick-track,
+.homescreen-fifth-wrapper-slider .slick-track,
+.homescreen-sixth-wrapper-slider .slick-track{
+    margin-left: 15px;
+}
+.category-slide,
+.seller-slide,
+.brand-slide,
+.featured-slide
+{
+    padding: 0 15px 0 0;
+}
+.category-slide img{
+    border-radius: 8px;
+}
+.homescreen-third-wrapper h3 {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    width: 253px;
+}
+.homescreen-third-wrapper p {
+    color: #707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 8px;
+    line-height: 20px;
+    width: 260px;
+}
+.home1-shop-now-btn a {
+    border-radius: 4px;
+    background: #FF4C3B;
+    padding: 6px 12px;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-block;
+}
+.homescreen-third-sec{
+    background-image: url(../images/banner/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    padding: 32px 0;
+}
+.home-page-favourite {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background:#FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.seller-txt-sec {
+    border-radius: 4px;
+    background: #000;
+    padding: 8px;
+    color:#FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+.seller-slide-top-content {
+    border-radius: 8px;
+    background: #F0F0F0;
+    width: 200px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.seller-slide-top-content img {
+    mix-blend-mode: multiply;
+    padding: 3px 0;
+    border-radius: 8px;
+}
+.seller-name {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.seller-price-txt1 {
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    padding-right: 8px;
+}
+.seller-price-txt2 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration-line: line-through;
+}
+.seller-price-txt3 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.seller-bottom-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.seller-star{
+    padding-right: 4px;
+}
+.seller-slide-bottom-content{
+    margin-top: 12px;
+}
+.seller-star img{
+    display: inline-block;
+}
+.item-bookmark.active  {
+    content: url(../svg/fill-heart.svg);
+    height: 18px;
+    width: 18px;
+}
+.brands-img {
+    border-radius: 4px;
+    background:#F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+.featured-slide-top {
+   width: 100%;
+   height: 160px;
+   border-radius: 8px;
+   background: #F0F0F0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.home-page-featured-favourite {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background:#FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.featured-slide-top img {
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+}
+.featured-name{
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.shop-now2-sec{
+    background-image: url(../images/homescreen-1/shop-now-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    padding: 32px 0;
+}
+.homescreen-seventh-wrapper h3{
+    color:#FFF;
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    width: 253px;
+}
+.homescreen-seventh-wrapper p{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    width: 260px;
+    margin-top: 8px;
+}
+.show-now2-custom-btn {
+    outline-offset: 2px !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 13px;
+    border: 2px solid #FFF !IMPORTANT;
+    background: transparent !important;
+    opacity: 1 !important;
+}
+.show-now2-custom-btn.active{
+    width: 24px !important;
+    background: white !important;
+}
+.slide-shop-now2 .carousel-indicators{
+    margin: 0;
+    right: 16px !important;
+    bottom: 32px !important;
+    justify-content: end !important;
+    z-index: 1 !important;
+}
+.brands-content p {
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.brands-content{
+    margin-top: 8px;
+}
+.custom-home1-tab-btn {
+    padding: 7px 12px;
+    border-radius: 16px !important;
+    border: 2px solid #000 !important;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+}
+.custom-home1-tab-btn.active{
+    border:2px solid transparent ;
+    background: #000 !important;
+    color: white;
+}
+.custom-home1-tab-btn:hover{
+    color: #000 !important;
+}
+.custom-home1-tab-btn.active:hover{
+    color: white !important;
+}
+.home1-tab-img img{
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+}
+.homepage1-tab-details-wrapper {
+    display: flex;
+    margin-top: 16px;
+}
+.home1-tab-img{
+    width: 128px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #F0F0F0;
+    padding: 9px 9px;
+}
+.home1-tab-favourite{
+    margin-left: 16px;
+    position: relative;
+}
+.plus-bnt-home1 {
+    border-radius: 4px;
+    background: #000;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.tab-home1-txt1 {
+    color:#000;
+    whitespace: nowrap;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.tab-home1-txt2 {
+    color:#000;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 12px;
+}
+.tab-home1-txt3 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+.orange-star-tab{
+    margin-top: 12px;
+}
+.home-page-arrival-favourite {
+    width: 28px;
+    height: 28px;
+    background: #f0f0f0;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#homepage1-tab li {
+    margin-left: 12px;
+}
+#homepage1-tab li:first-child{
+    margin-left: 0;
+}
+#homepage1-tab{
+    flex-wrap: nowrap !important;
+    margin-left: 16px;
+    padding-right: 16px;
+}
+
+/************************ 17.Tabbar CSS ***************************/
+.tabbar-bottom{
+    width: 100%;
+    height: 56px;
+    border-radius: 28px;
+    background: #FF4C3B;
+    box-shadow: 0px 24px 12px -20px rgba(255, 76, 59, 0.80);
+    display: flex;
+    padding: 19px 24px;
+}
+.bottom-navigation-tabbar{
+    margin-top: 100px;
+}
+.tabbar-bottom a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+    padding: 11px 12px;
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+}
+.tabbar-bottom a svg path{
+    stroke: white;
+}
+.tabbar-bottom a {
+    margin-left: 24px;
+}
+.tabbar-bottom a:first-child{
+    margin-left: 0;
+}
+.tabbar-bottom span {
+    color: greenyellow;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    padding-left: 12px;
+}
+
+/************************ 18.Language Screen CSS ***************************/
+.change-lan-sec {
+    padding: 17px 0px !important;
+    border-bottom: 1px solid rgb(0 0 0 / 8%);
+}
+.form-check-input.custom-input {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #666666;
+    float: right !important;
+}
+.form-check-input.custom-input:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+.form-check-label.custom-lable {
+    display: flex;
+    align-items: center;
+    color:#707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.form-check-input.custom-input:checked{
+   background: white;
+   background-image: url(../images/currency/lang-select.svg);
+   background-size: cover;
+   width: 20px;
+   height: 20px;
+   border: none;
+   mix-blend-mode: darken;
+}
+.language-sel .form-check-label.custom-lable {
+    color:#000;
+}
+.change-lan-sec:last-child {
+    border: navajowhite;
+}
+.lang-list{
+    margin-top: 15px;
+}
+
+/************************ 19.Currency Screen CSS ***************************/
+.custom-lable span {
+    padding-right: 8px;
+}
+.language-sel .curr-icon {
+    filter: brightness(0) saturate(100%) invert(10%) sepia(16%) saturate(2366%) hue-rotate(178deg) brightness(89%) contrast(84%);
+}
+input.form-check-input.custom-input:active{
+    filter: unset;
+}
+
+/************************ 20.Faq Screen ***************************/
+.boder-top1 {
+    border-bottom: 1px solid rgb(0 0 0 / 10%);
+    padding-top: 24px;
+}
+.nested-accordion {
+  cursor: pointer;
+  position: relative;
+}
+.nested-accordion .comment {
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.nested-accordion h3 {
+  color:#000;
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.nested-accordion h3:before {
+  content: url(../svg/faq-plus.svg);
+  position:absolute;
+  right: 0;
+  color:#FF4C3B;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.nested-accordion h3.selected {
+  color:#FF4C3B;
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.nested-accordion h3.selected:before {
+ content: url(../svg/faq-minus.svg);
+}
+.faq-txt1.selected:before{
+   content: url(../svg/faq-down.svg) !important;
+}
+.faq-txt1:before{
+   content: url(../svg/faq-up.svg) !important;
+}
+.faq-boder {
+    height: 1px;
+    background: rgb(0 0 0 / 10%);
+}
+.boder-top {
+    border-bottom: 1px solid rgb(0 0 0 / 10%);
+    padding-bottom: 24px;
+}
+.faq-txt1 {
+  color:#000 !important;
+  font-family: Space Grotesk !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 24px !important;
+}
+.faq-txt1.selected{
+    color:#FF4C3B !important;
+    font-family: Space Grotesk !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+}
+
+/************************ 21.Friend Invite Screen CSS ***************************/
+.friend-name {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.friend-no {
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 8px;
+}
+.friend-no a{
+ color:#707070;
+}
+.invite-img img {
+    border-radius: 50px;
+}
+.invite-friend-wrapper{
+    display: flex;
+    align-items: center;
+}
+.invite-img{
+    margin-right: 16px;
+}
+.custom-radio-sel-friend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 61px;
+    height: 34px;
+    border-radius: 4px;
+    border: 2px solid #000;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.friend-select input[type="checkbox"]:checked + label {
+    border-radius: 4px;
+    background: #000;
+    color: white;
+    border: 2px solid transparent;
+}
+.friend-select input{
+    display: none;
+}
+.friend-invite{
+    margin-left: auto;
+}
+
+/************************ 22.Category Screen CSS ***************************/
+.category-content-sec{
+    margin-top: 12px;
+}
+.category-img-sec img{
+    border-radius: 8px;
+}
+.category-page-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+}
+.category-page-wrapper .category-page-deatils:nth-child(2),
+.category-page-wrapper .category-page-deatils:nth-child(3){
+    margin-top: 0;
+}
+#category-page,
+#brand-page{
+    margin-bottom: 16px;
+}
+
+/************************ 23.Choose Brand Screen CSS ***************************/
+.brand-details {
+    background: #F0F0F0;
+    border-radius: 4px;
+    padding: 12px;
+    text-align: center;
+}
+.brand-page-wrapper{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 16px;
+}
+
+/************************ 24.Offer Page Screen CSS ***************************/
+.offer-page-deatils{
+   background-image: url(../images/offer-page/offer-1.png);
+   background-repeat: no-repeat;
+   max-width: 100%;
+   position: relative;
+   height: 186px;
+   mix-blend-mode: darken;
+   background-position: right;
+}
+.offer-1{
+    background-image: url(../images/offer-page/offer-1.png);
+}
+.offer-2{
+    background-image: url(../images/offer-page/offer-2.png);
+}
+.offer-3{
+    background-image: url(../images/offer-page/offer-3.png);
+
+}
+.offer-4{
+    background-image: url(../images/offer-page/offer-4.png);
+}
+.offer-page-content h3 {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    padding-top: 24px;
+}
+.offer-page-content p{
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+.get-dicount-txt {
+    color: #707070 ;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 16px;
+    width: 170px;
+}
+.off-get {
+    color:#707070 !important;
+    font-family: Lato !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    width: 170px;
+    margin-top: 16px !important;
+}
+.offer1-slider .carousel-indicators{
+    margin-bottom: 16px !important;
+    z-index: 1 !important;
+}
+.offer1-slider-custom-btn{
+    border-radius: 8px !important;
+    border: 2px solid #707070 !important;
+    width: 8px !important;
+    height: 8px !important;
+    background: transparent !important;
+    opacity: 1 !important;
+}
+.offer1-slider-custom-btn.active{
+    width: 24px!important;
+    background: #707070 !important;
+}
+.offer1-slider .carousel-item{
+    border-radius: 24px;
+    background: #F0F0F0;
+    padding-left: 24px;
+}
+
+/************************ 25.Empty Cart Screen CSS ***************************/
+.empty-cart-screen-full{
+    text-align: center;
+}
+.shop-now-empty-btn a {
+    border-radius: 8px;
+    border: 2px solid #FF4C3B;
+    width: 343px;
+    padding: 12px;
+    display: inline-block;
+    color:#FF4C3B;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/************************ 26.Cart Without Promocode Screen CSS ***************************/
+.cart-without-img-sec {
+    border-radius: 8px;
+    background: #F0F0F0;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-without-img-sec img {
+    mix-blend-mode: darken;
+    padding: 2px;
+    border-radius: 8px;
+}
+.card-without-price-sec {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 12px;
+}
+.price-code-txt1 {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.price-code-txt2 {
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 16px;
+}
+.price-code-txt3 span {
+    color: #707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.cart-without-promocode-first-full {
+    display: flex;
+    column-gap: 14px;
+}
+.card-without-promocode-increment{
+    margin-top: 12px;
+}
+.cart-without-promocode-full,
+.without-code-second{
+    margin-top: 24px;
+}
+.cart-boder {
+    border-bottom: 1px solid #F0F0F0;
+}
+.enter-code-promocode {
+    border-radius: 8px;
+    background: #F0F0F0;
+    padding: 12px;
+    width: 100%;
+}
+.enter-code-promocode1 {
+    border-radius: 8px;
+    background: #000;
+    padding: 12px;
+    width: 100%;
+}
+.enter-code-promocode input {
+    border-radius: 8px;
+    background: #F0F0F0;
+    border: navajowhite;
+    color:#707070;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+}
+.enter-code-promocode input:focus-visible{
+    outline-width: 0 !important;
+}
+.enter-code-promocode1 input{
+    color:#FFF;
+    border: navajowhite;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    border-radius: 8px;
+    background: #000;
+}
+.code-cancel-btn a {
+    background-color: #4ADE80 !important;
+}
+.enter-code-promocode input:placeholder{
+   color:#707070;
+}
+.code-plus-btn a {
+    width: 48px;
+    height: 48px;
+    background: black;
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.code-details {
+    display: flex;
+    column-gap: 12px;
+}
+.without-code-second-full p {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.check-page-bottom-deatails {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.check-price-name1 p,
+.check-price-list1 p {
+    color:#000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.check-price-name p {
+    color:#707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.col-green {
+    color:#4ADE80;
+    text-align: right;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.col-red {
+    color: #ED0006;
+    text-align: right;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.without-code-last-full {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.proceed-to.check-btn {
+    border-radius: 8px;
+    border: 2px solid #FF4C3B;
+}
+.proceed-to.check-btn a {
+    width: 240px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FF4C3B;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.total-txt {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.price-txt {
+    color: #000;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+#cart-without-promocode
+{
+    margin-bottom: 90px;
+}
+
+/************************ 27.Log-out Screen CSS ***************************/
+.sure-log-out-btn a{
+    width: 343px;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px solid #707070;
+    display: inline-block;
+    padding: 12px 0;
+    color: #707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.empty-img,
+.contact-img-sec,
+.oder-success-img,
+.myorder1-img{
+    text-align: center;
+}
+#log-out-page {
+    position: relative;
+    margin-bottom: 144px;
+}
+.cancel-log-out-btn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 16px;
+    left: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.sure-log-out-btn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 80px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+/************************ 28.Checkout screen ***************************/
+.Checkout-first-sec-full span {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+#checkout-modal-payment .payment-type img:nt-child(1){
+   filter: brightness(0) saturate(100%) invert(0%) sepia(58%) saturate(15%) hue-rotate(238deg) brightness(98%) contrast(103%);
+}
+.black-icon{
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(29%) hue-rotate(342deg) brightness(107%) contrast(108%);
+}
+.checkout-main .check-icon-sec img{
+    filter: brightness(0) saturate(100%) invert(44%) sepia(100%) saturate(3059%) hue-rotate(337deg) brightness(100%) contrast(102%);
+}
+.Checkout-first-sec-full,
+.check-deatils {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Checkout-border {
+    border-bottom: 1px solid #F0F0F0;
+    margin-top: 8px;
+}
+.check-txt1 {
+    overflow: hidden;
+    color:#707070;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.check-txt2 {
+    color:#707070;
+    text-align: right;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.check-txt2.col-green {
+    color: #4ADE80;
+}
+.check-txt2.col-red {
+    color: #ED0006;
+}
+.Checkout-second-full{
+    margin-top: 16px;
+}
+.check-deatils{
+    margin-bottom: 12px;
+}
+.check-deatils:last-child{
+    margin-bottom: 0;
+}
+.shopping-deatils{
+    display: flex;
+}
+.check-icon-sec {
+    border-radius: 8px;
+    padding: 12px;
+    background: rgb(255 76 59 / 8%);
+    width: 48px;
+    height: 48px;
+}
+#checkout-modal-payment .modal-content.checkout-modal-content{
+    padding: 24px 24px 8px 24px;
+}
+.check-deatils-sec {
+    margin-left: 16px;
+}
+.check-back-sec{
+    margin-left: auto;
+}
+.shipp-txt1 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.shipp-txt2 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.Checkout-third-sec,
+.Checkout-fourth-sec,
+.Checkout-sec-full{
+    margin-top: 32px;
+}
+.shipping-boder {
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 16px;
+}
+.product-textarea {
+    width: 100%;
+    resize: none;
+    height: 110px;
+    border: none;
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 8px;
+    background:#F0F0F0;
+    margin-top: 12px;
+}
+.product-textarea:focus-visible{
+    outline-width: 0 !important;
+}
+.checkout-form {
+    border-radius: 8px;
+    background: #F0F0F0;
+    padding: 12px;
+}
+.checkout-form label {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.confirm-order-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding-bottom: 16px;
+}
+#Checkout-sec,
+#account-screen-page{
+    position: relative;
+    margin-bottom: 80px;
+}
+.checkout-modal-txt1 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.modal-content.checkout-modal-content {
+    border-radius: 16px;
+    background: #FFF;
+    padding: 24px;
+}
+#checkout-modal,
+#checkout-modal-payment{
+    background: rgb(0 0 0 / 40%) !important;
+}
+.checkout-modal-lbl-payment {
+    padding: 16px 0;
+}
+.wallet-txt1{
+    margin-left: 12px;
+}
+.checkout-modal-content .modal-header,
+.checkout-modal-content .modal-body{
+    padding: 0;
+}
+.checkout-modal-lbl{
+    display: inline-grid !important;
+    padding: 16px 0;
+    color:#000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.checkout-modal-lbl span {
+    padding-top: 8px;
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-right: 30px;
+}
+.chek-1{
+    padding-bottom: 0 !important;
+}
+.seller-modal .seller-content-modal{
+    padding: 8px 24px !important;
+}
+#checkout-modal .custom-radio input,
+#checkout-modal-payment .custom-radio input
+{
+    right: 0;
+}
+.checkout-modal-content .modal-header {
+    padding-bottom: 16px;
+}
+#checkout-modal .border-bottom:nth-child(3),
+#checkout-modal-payment .border-bottom:nth-child(7),
+.seller-content-modal .border-bottom:nth-child(6) {
+    border-bottom: 0 !important;
+}
+.custom-radio {
+    position: relative;
+    margin-bottom: 0;
+}
+.form-check-input:checked {
+    background-color: #02aabd;
+    border-color: #02aabd;
+}
+#checkout-modal .form-check-input:active,
+#checkout-modal-payment .form-check-input:active
+{
+    filter: none;
+}
+#checkout-modal .form-check-input:checked[type=radio],
+#checkout-modal-payment .form-check-input:checked[type=radio] {
+    outline: 2px solid #0b0b0b;
+    outline-offset: 4px;
+    background: black;
+    border: 0;
+    width: 15px;
+    height: 15px;
+}
+#checkout-modal .form-check-input,
+#checkout-modal-payment .form-check-input{
+   border: 2px solid black;
+   width: 20px;
+   height: 20px;
+}
+.custom-radio input {
+    position: absolute;
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#checkout-modal input:focus,
+#checkout-modal-payment input:focus {
+    box-shadow: none;
+}.payment-type {
+    width: 45px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    display: inherit;
+    text-align: center;
+}
+
+/************************ 29.Account Screen CSS ***************************/
+.account-screen-first{
+    display: flex;
+    align-items: center;
+}
+.account-screen-content{
+    margin-left: 16px;
+}
+.account-screen-edit {
+    margin-left: auto;
+}
+.account-screen-edit a {
+    padding: 9px;
+    background: black;
+    display: flex;
+    border-radius: 18px;
+}
+.account-screen-content h3 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.account-screen-content p {
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4px;
+}
+.account-screen-img img {
+    border-radius: 40px;
+}
+.account-screen-second{
+    margin-top: 24px;
+}
+.account-screen-second-full a {
+    display: block;
+}
+.account-img {
+    padding: 12px;
+    background: rgb(255 76 59 / 8%);
+    border-radius: 8px;
+    margin-right: 16px;
+}
+.account-content p {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.account-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid rgb(0 0 0 / 8%);
+}
+.account-back-btn {
+    margin-left: auto;
+}
+.account-border {
+    border-bottom: 1px solid rgb(0 0 0 / 8%);
+}
+
+/************************ 30.Address Screen CSS ***************************/
+.add-icon {
+    border-radius: 4px;
+    background: #F0F0F0;
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+}
+.add-deatils-txt1 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-right: 12px;
+}
+.add-deatils-txt2 {
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background:#F0F0F0;
+}
+.address-screen-wrapper{
+    display: flex;
+    border-bottom: 1px solid #F0F0F0;
+    padding: 24px 0;
+}
+.add-deatils{
+    margin-left: 12px;
+}
+.add-edit-btn{
+    margin-left: auto;
+}
+.add-deatils-txt3 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.new-add-btn,
+.add-my-card-btn,
+.add-new-card-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: white;
+    padding-bottom: 16px;
+}
+#address-screen,
+#add-newcard-screen{
+    margin-bottom: 80px;
+}
+.address-screen-wrapper:nth-child(5) {
+    border: none;
+}
+
+/************************ 31.Filter Screen CSS ***************************/
+.filter-modal .pricing-slider .irs-slider {
+    height: 22px;
+    width: 22px;
+    background: #ffffff;
+    border: 2px solid #000;
+    z-index: 0;
+}
+.filter-modal .pricing-slider .irs-line {
+    height: 4px;
+    border: none;
+    background: #F0F0F0;
+    border-radius: 2px;
+}
+.filter-modal .pricing-slider .irs-bar {
+    height: 4px;
+    border: none;
+
+    background: #000;
+    border-radius: 2px;
+}
+.filter-modal .pricing-slider .irs-from,
+.filter-modal .pricing-slider .irs-to {
+    background-color: #000;
+    color:#FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 34px;
+    height: 20px;
+}
+.filter-modal .pricing-slider .irs-min,
+.filter-modal .pricing-slider .irs-max {
+  display: none;
+}
+.select-filter{
+   display: flex;
+   justify-content: space-between;
+   border-radius: 8px;
+   border: 2px solid #000;
+   padding: 4px;
+}
+.filter-sec input[type="radio"] {
+   display: none;
+}
+.filter-sec input[type="radio"]:checked + label {
+   background: black;
+   border-radius: 8px;
+   color: white;
+   border: 2px solid transparent;
+   width: 112px;
+}
+label.custom-radio-sel-filter {
+    padding: 11px 16px;
+    cursor: pointer;
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-category{
+   display: flex;
+   column-gap: 12px;
+   padding-right: 16px;
+}
+.category-sec input[type="radio"] {
+  display: none;
+}
+.category-sec input[type="radio"]:checked + label {
+   background: black;
+   border-radius: 16px;
+   border: 2px solid #000;
+   color: white;
+}
+label.custom-radio-sel-category {
+    padding: 7px 12px;
+    cursor: pointer;
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    border: 2px solid #000;
+}
+.filter-second {
+    margin-left: 16px;
+}
+.filter-title {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+.filter-modal span.irs-to:before,
+.filter-modal span.irs-from:before
+{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #000;
+    bottom: -4px;
+    rotate: 137deg;
+    z-index: -1;
+    border-radius: 5px;
+}
+.filter-modal span.irs-to,
+.filter-modal span.irs-from {
+    display: flex;
+    top: -10px;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+}
+.filter-content{
+    margin-top: 30px;
+}
+.filter-review {
+    margin-left: 16px;
+}
+.filter-btn {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding-bottom: 16px;
+    bottom: 0;
+}
+#filter-screen{
+    margin-bottom: 80px;
+}
+
+/************************ 32.Best Seller CSS ***************************/
+.seller-top-sec-full {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seller-txt1 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+}
+.seller-top-sec-full a {
+    display: initial;
+    align-items: center;
+    column-gap: 5px;
+}
+
+/************************ 33.Contact Us CSS ***************************/
+.contact-us-page-deatils{
+    margin-top: 32px;
+}
+.contact-us-mail-btn{
+    margin-top: 12px;
+}
+.contact-us-content h1 {
+    color:#000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.contact-us-content p {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 16px;
+}
+.contact-us-content{
+    margin-top: 32px;
+}
+.contact-us-mobile-btn a,
+.contact-us-mail-btn a {
+    border-radius: 8px;
+    background: rgb(255 76 59 / 8%);
+    padding: 12px;
+    width: 343px;
+    display: block;
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.contact-us-mobile-btn,
+.contact-us-mail-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us-no{
+    margin-left: 12px;
+}
+
+/************************ 34.Privacy Page CSS ***************************/
+.privacy-txt1,
+.privacy-txt2,
+.privacy-txt6,
+.privacy-txt4,
+.privacy-txt5 {
+    color: #707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.privacy-txt3 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+.privacy-page-full{
+    margin-top: 32px;
+}
+.privacy-second-content{
+    margin-top: 24px;
+}
+.privacy-txt2,
+.privacy-txt5,
+.privacy-txt6{
+    padding-top: 10px !important;
+}
+.privacy-txt4{
+    padding-top: 16px !important;
+}
+
+/************************ 35.Finger print CSS ***************************/
+.finger-top p {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.finger-bottom-fingerprint {
+    text-align: center;
+}
+.finger-print-sec-btn {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 16px;
+    background: white;
+}
+#finger-print-sec{
+    position: relative;
+    margin-bottom: 80px;
+}
+p.print-txt {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 32px;
+}
+.print-skip-btn a {
+    width: 163px;
+    height: 48px;
+    border-radius: 8px;
+    background: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.print-continue-btn a{
+    width: 163px;
+    height: 48px;
+    border-radius: 8px;
+    background: #FF4C3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.finger-print-sec-btn-wrapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.finger-top{
+    margin-top: 32px;
+}
+.finger-bottom{
+    padding-top: 127px;
+}
+.finger-img-sec {
+    text-align: center;
+}
+.finger-content-sec h2 {
+    color:#000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.finger-content-sec p {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 16px;
+}
+.loader {
+    text-align: center;
+    margin-top: 32px;
+}
+.finger-modal-content .modal-body{
+    padding: 24px 16px;
+}
+.finger-modal-content {
+    width: 343px;
+    margin: auto;
+}
+
+/************************ 36.Review Screen CSS ***************************/
+.rating-review  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.rating-review ul li {
+    display: inline-block;
+}
+.rating-review {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.review-wrapper{
+    display: flex;
+    align-items: center;
+}
+.review:nth-child(2){
+    margin-left: 12px;
+}
+.review:nth-child(2) h4 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.review-helpful-sec-full {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    border-top: 1px solid rgb(0 0 0 / 8%);
+    border-bottom: 1px solid rgb(0 0 0 / 8%);
+    padding: 5px 0;
+}
+.review-helpful-sec{
+    margin-top: 8px;
+}
+.review-deatils-sec{
+    margin-top: 24px;
+}
+.review:last-child{
+    margin-left: auto;
+}
+.review-helpful-sec-full {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.review-para {
+    color: #707070;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 13px;
+}
+.review:first-child img {
+    border-radius: 24px;
+}
+.review-top h3 {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.review-time {
+    color: #707070;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.helpful-txt {
+    color: #000;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.like-txt1,
+.dislike-txt {
+    color:#707070;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.custom-radio-sel-review {
+    padding: 8px 12px;
+    border-radius: 18px;
+    border: 2px solid #000;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    color:#000;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    display: inline-flex;
+}
+.review-sec input[type="radio"]:checked + label {
+    border-radius: 18px;
+    background: #000;
+    color: white;
+    border: 2px solid transparent;
+}
+.review-sec input{
+    display: none;
+}
+.review-star {
+    margin-right: 4px;
+}
+.review-desc {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    padding-right: 16px;
+}
+.review-sec{
+    margin-left: 12px;
+}
+.review-sec:first-child{
+    margin-left: 0px;
+}
+.review-pr {
+    padding-right: 0;
+}
+
+/************************ 37.About-Us CSS ***************************/
+.about-us-screen-full{
+    margin-top: 32px;
+}
+.youtube-bg {
+    background: rgb(255 0 0 / 7%);
+}
+.twitter-bg {
+    background: rgb(29 161 242 / 7%);
+}
+.instragram-bg {
+    background: linear-gradient(225deg, rgb(110 62 255 / 7%) 0%, rgb(224 49 77 / 7%) 47.92%, rgb(254 215 84 / 7%) 100%);
+}
+.facebook-bg {
+    background: rgb(59 89 153 / 7%);
+}
+.about-social-txt {
+    color: #707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 12px !important;
+}
+.about-us-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+}
+.shape {
+    width: 74px;
+    height: 74px;
+    border-radius: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/************************ 38.Single Clothes Screen CSS ***************************/
+.single-clothes-favourite {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.single-clothes-slide-img {
+    background:#F0F0F0;
+    text-align: center;
+}
+.single-clothes-slide-img img {
+    mix-blend-mode: darken;
+    padding: 6px;
+    max-width: 100%;
+}
+.single-slider-btn-prev,
+.single-slider-btn-next {
+    width: 32px;
+    height: 56px;
+    background: white;
+    opacity: 1;
+    top: unset;
+    bottom: unset;
+}
+.clo-txt1 {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.cloths-review-sec {
+    display: flex;
+    align-items: center;
+}
+.cloths-sold-sec {
+    padding: 2px 8px;
+    border-radius: 4px;
+    background:#F0F0F0;
+}
+.cloths-sold-sec p {
+    color:#707070;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+}
+.cloths-star-sec{
+    margin-left: 16px;
+}
+.cloths-star-sec span {
+    color:#000;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+.cloths-second-sec-full{
+    margin-top: 16px;
+}
+.single-clothes-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.single-cloth-border {
+    border-bottom: 1px solid #F0F0F0;
+    margin-top: 16px;
+}
+.moretext {
+  display: none;
+}
+.des-txt1 {
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.cloth-third-sec-full,
+.cloths-fourth-sec-full,
+.cloths-fifth-sec-full{
+    margin-top: 16px;
+}
+::marker{
+    color: #707070;
+}
+.add-txt1 {
+    color: #707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.add-txt2 {
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.custom-radio-sel-size {
+   width: 32px;
+   height: 32px;
+   border-radius: 16px;
+   border: 2px solid #C4C4C4;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #707070;
+   text-align: center;
+   font-family: Lato;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 14px;
+}
+.clothes-size input[type="radio"]:checked + label {
+    border-radius: 16px;
+    background: #000;
+    color: white;
+    border: 2px solid transparent;
+}
+.clothes-size input{
+    display: none;
+}
+.color-wrap input[type="radio"]{
+    appearance: none;
+}
+.color-wrap label {
+    border-radius: 20px;
+    position: relative;
+}
+.color1{
+    background: #65D6BA;
+}
+.color2{
+    background: #D66565;
+}
+.color3{
+    background: #6570D6;
+}
+.color4{
+    background: #ABD665;
+}
+.color5{
+   background: black;
+}
+.color6{
+    background: #FFB800;
+}
+.color7{
+    background: #0094FF;
+}
+.color-wrap input:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(../svg/right-tick.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.color-wrap input[type="radio"]:checked:after{
+    opacity: 1;
+}
+.col-deatils{
+   height: 32px;
+   width: 32px;
+   position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center
+}
+.cloths-fifth-sec-full{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.clothes-size-sec,
+.cloths-color-sec{
+    display: flex;
+    column-gap: 8px;
+    margin-top: 12px;
+}
+.product__minus span,
+.product__plus span {
+    border: 1px solid #C4C4C4;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.product__input{
+    width: 40px;
+    height: 24px;
+    border-radius: 4px;
+    background:#F0F0F0;
+    border: none;
+    text-align: center;
+}
+.product-incre{
+    display: flex;
+    column-gap: 4px;
+}
+.price-sec1 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-right: 8px;
+}
+.price-sec2 {
+    color:#FF4C3B;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.clothes-sixth-full{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px ;
+}
+.clothes-sixth-sec {
+    background:#FFF;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.04);
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    max-width: 600px;
+    padding-bottom: 16px;
+    background: white;
+}
+.cloths-fifth-sec{
+    padding-bottom: 24px;
+}
+#single-clothes-page{
+    margin-bottom: 121px;
+}
+.moreless-button {
+    color:#000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+.des-txt2{
+    display: inline;
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.moreless-button:hover{
+    color:#000;
+}
+.notification-badge {
+    width: 10px;
+    height: 10px;
+    background: #FF4C3B;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+.notification-badge-btn {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+.additional-deatils{
+    margin-top: 12px;
+}
+
+/************************ 39.Shoes Screen CSS ***************************/
+.clothes-favourite{
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.shoes-screen-top{
+    position: relative;
+}
+.shoes-img img {
+    mix-blend-mode: darken;
+    max-width: 100%;
+    border-radius: 8px;
+}
+.shoes-img {
+    background: #F0F0F0;
+    width: 100%;
+    height: 164px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.shoes-screen-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.shoes-screen-first h3 {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.cloth-txt1 span {
+    color: #000;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+.cloth-txt2 {
+    color: #707070;
+    text-align: right;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-left: 4px;
+}
+.shoes-screen-full {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+.shoes-screen-first{
+    margin-top: 12px;
+}
+
+/************************ 40.Setting Screen CSS ***************************/
+.icon-back-btn{
+    margin-left: auto;
+}
+.setting-deatils{
+    display: flex;
+    align-items: center;
+}
+.setting-icon {
+    padding: 12px;
+    background: rgb(255 76 59 / 8%);
+    border-radius: 8px;
+    margin-right: 16px;
+}
+.icon-name p
+{
+    color: #000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.setting-page-wrapper a{
+    display: block;
+}
+
+/************************ 41.Payment Screen CSS ***************************/
+.payment-icon {
+    border-radius: 4px;
+    border: 1px solid #F0F0F0;
+    background:#FFF;
+    width: 45px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+.payment-icon-name p {
+    color:#707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.pay-txt1 {
+    color:#000;
+    text-align: right;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/************************ 42.Notification Option Screen CSS ***************************/
+.notification-option-name p {
+    color: #000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.notification-option-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.notification-option-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notification-option-switch .switch input {
+  display: none;
+}
+.notification-option-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 4px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgb(102 102 102 / 20%);
+  border-radius: 40px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.notification-option-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  background: #fff;
+  border-radius:22px;
+  left: 0px;
+  bottom:0px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 22px;
+  border: 0.5px solid #F0F0F0;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+}
+.notification-option-switch input:checked + .slider {
+   background: #4ADE80;
+   border: 1px solid transparent;
+}
+.notification-option-switch input:checked + .slider:before {
+  transform: translateX(16px);
+}
+.notification-option-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0;
+}
+.notification-option-screen-full{
+    margin-top: 15px;
+}
+.custom-header-offcanva {
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: end !important;
+}
+
+/*------------------------------------- 43.Notification -------------------------------------*/
+.noti-time {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.notification-deatails h3 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.notification-deatails p {
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.notification-deatails {
+    border-radius: 8px;
+    background:#F0F0F0;
+    padding: 12px;
+    margin-top: 8px;
+}
+.first-sec-notification{
+    margin-top: 24px;
+}
+.order-status-sec {
+    display: flex;
+    align-items: center;
+}
+
+/*------------------------------------- 44.Track Order Screen -------------------------------------*/
+.order1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    border-left: 2px dashed black;
+    height: 40px;
+    margin-top: 14px;
+}
+.order-status-sec:last-child .order1::before{
+    display: none;
+}
+.order1{
+    position: relative;
+}
+.order2{
+    margin-left: 12px;
+}
+.order3{
+    margin-left: auto;
+}
+.order-txt1 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.order-txt2 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    margin-top: 4px;
+}
+.order-txt3 {
+    color:#707070;
+    text-align: right;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+}
+.track-order-third-sec-full h3{
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 18px;
+}
+.track1,
+.track-boder,
+.track-boder2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.track1:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 56px;
+    left: 88%;
+    border-bottom: 2px dashed;
+}
+.track-boder:before{
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  left: 80%;
+  border-bottom: 2px dashed;
+  z-index: -1;
+}
+.track-boder2:after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    right: 84%;
+    border-bottom: 2px dashed #C4C4C4;
+}
+.track-boder2:before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 56px;
+    left: 90%;
+    border-bottom: 2px dashed #C4C4C4;
+}
+.track-order2-full {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+.track-order2-wrapper:last-child .track1:before {
+    display: none;
+}
+.track1,
+.track-boder,
+.track-boder2{
+    margin-top: 12px;
+}
+
+/*------------------------------------- 45.My Order Screen 2 -------------------------------------*/
+.order-screen2-tab-btn {
+    color: #707070;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    background: transparent !important;
+    border-radius: 0 !important;
+    position: relative;
+    padding: 0!important;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 8px !important;
+}
+.order-screen2-tab-btn:focus-visible{
+    outline-width: 0 !important;
+}
+.order-screen2-tab-btn:hover,
+.order-screen2-tab-btn.active{
+ color: #FF4C3B !important ;
+}
+.order-screen2-tab li.nav-item {
+    width: 50%;
+    position: relative;
+}
+.order-screen2-tab li.nav-item button:before {
+    content: '';
+    background: #FF4C3B;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.order-screen2-tab li.nav-item .active:before {
+    opacity: 1;
+}
+.order-screen2-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #F0F0F0;
+}
+.status-txt1 {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.status-txt2 span {
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.status-txt3 {
+    border-radius: 4px;
+    background:#F0F0F0;
+    padding: 3px 8px;
+    width: fit-content;
+    margin-top: 12px;
+}
+.status-txt3 p {
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.status-price-sec{
+    margin-top: 12px;
+}
+.status-txt2 span:before {
+    content: "|";
+    padding: 0 5px;
+}
+.status-txt2 span:first-child:before{
+    display: none;
+}
+.status-txt4 p {
+    color:#000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.ongoing-status-sec{
+    margin-top: 24px;
+}
+.status-txt5 {
+    border-radius: 4px;
+    background: #000;
+    padding: 3px 8px;
+}
+.status-txt5 p {
+    color:#FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.ongoing-status-sec-full {
+    display: flex;
+    column-gap: 13px;
+}
+.ongoing-img-sec {
+    background: #f0f0f0;
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+}
+.ongoing-img-sec img ,
+.myorder1-img img{
+    mix-blend-mode: darken;
+    max-width: 100%;
+    border-radius: 8px;
+}
+.status-price-sec-full {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.status-txt2 {
+    margin-top: 8px;
+}
+.myorder1-content h1 {
+    color:#000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.myorder1-content p {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+/*------------------------------------- 46.Homescreen2 -------------------------------------*/
+.home2-overlay {
+   background: linear-gradient(227deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+}
+.home2-slider-img-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0 16px 24px 16px;
+}
+.home2-first-slider .carousel-indicators{
+    margin: 0;
+    right: 16px !important;
+    bottom: 32px !important;
+    justify-content: end !important;
+    z-index: 1 !important;
+}
+.home2-slider-img-content h2 {
+    color:#FFF;
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    width: 253px;
+}
+.home2-slider-img-content p {
+    color:#FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.home2-shop-btn {
+    border-radius: 4px;
+    background:#FF4C3B;
+    padding: 6px 12px;
+    width: fit-content;
+    cursor: pointer;
+}
+.home2-shop-btn a {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+.home2-first-slider-btn {
+    height: 6px !important;
+    width: 6px !important;
+    border: 2px solid white !important;
+    border-radius: 5px;
+    background: transparent !important;
+    opacity: 1 !important;
+}
+.home2-first-slider-btn.active {
+    background: white !important;
+    width: 24px !important;
+}
+.home3-cate-img {
+    padding: 12px;
+    border-radius: 64px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home3-third-wrapper {
+    padding: 5px 5px 8px 5px;
+    border-radius:37px 37px 4px 4px;
+    background: #F0F0F0;
+}
+.home3-third-wrapper p {
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    margin-top: 8px;
+}
+.home3-third-sec-bottom-full {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+}
+.home2-slider2 {
+    background-image: url(../images/homescreen2/slider-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    padding: 32px 0;
+}
+.home2-slider2-content h3{
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    width: 253px;
+}
+.home2-slider2-content p{
+    color:#000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    width: 260px;
+}
+.home2-slider2-btn{
+    outline-offset: 2px !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 13px;
+    border: 2px solid #000 !IMPORTANT;
+    background: transparent !important;
+    opacity: 1 !important;
+}
+.home2-slider2-btn.active{
+    width: 24px !important;
+    background: #000 !important;
+}
+.featured-slide-top-home2 {
+   width: 100%;
+   height: 120px;
+   border-radius: 8px;
+   background: #F0F0F0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.featured-slide-top-home2 img {
+    mix-blend-mode: multiply;
+}
+.home2-tab-txt1 {
+    overflow: hidden;
+    color:#000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.home2-tab-txt2 {
+    color:#000;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+.home2-tab-txt3 {
+    color:#707070;
+    text-align: right;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+.home2-tab-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.home2-tab-wrap {
+    width: calc(50% - 8px);
+}
+
+/*------------------------------------- 47.Profile Edit -------------------------------------*/
+.image-input input {
+    display: none;
+}
+.image-button {
+    background: black;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.profile-edit-img img {
+    border-radius: 60px;
+}
+.update-change-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-custom-input{
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding-left: 12px;
+    color:#000;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.profile-custom-input::placeholder{
+    color:#000;
+}
+.profile-edit-img {
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.image-input {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*------------------------------------- 48.Add New Address -------------------------------------*/
+.map-section img{
+    width: 100%;
+    border-radius: 24px;
+}
+.title-sec label {
+    display: block;
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.title-sec input {
+    border-radius: 8px;
+    background: #F0F0F0;
+    border: navajowhite;
+    padding: 12px 16px;
+    width: 100%;
+    color:#000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.checkbox-input-add {
+   display: none;
+}
+.footer-chec-txt1 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.checkbox-input-add + .footer-chec-txt1:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 22px;
+  height: 22px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.checkbox-input-add:checked + .footer-chec-txt1:before {
+   background: black;
+   border: 2px solid white;
+}
+.checkbox-input-add:checked + .footer-chec-txt1:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+.checkbox-input-add{
+  position: absolute;
+  opacity: 0;
+}
+.checkbox-input-add + .footer-chec-txt1 {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+.add-address-btn {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 16px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+#add-new-address-screen{
+    margin-bottom: 80px;
+}
+.map-section iframe {
+    border-radius: 24px;
+}
+
+/************************ 49.Leave Review Screen CSS ***************************/
+.review-border {
+    border-bottom: 1px solid #F0F0F0;
+    margin-top: 24px;
+}
+.star-rating {
+  direction: rtl;
+  text-align: center;
+  cursor: default;
+}
+.star-rating input[type=radio] {
+  display: none;
+}
+.star-rating label {
+  color: #FF4C3B;
+  font-size: 2rem;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type=radio]:checked ~ label {
+  color: rgb(255 76 59 / 24%);
+}
+.product-rate-commentsec {
+    position: relative;
+}
+.product-comment {
+    width: 100%;
+    height: 206px;
+    border: 1px solid #F6F8FA !important;
+    border-radius: 8px;
+    resize: none;
+    background: #F0F0F0;
+}
+.product-textarea1 {
+    width: 100%;
+    resize: none;
+    height: 135px;
+    border: none;
+    padding: 16px;
+    color:#000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    background: #F0F0F0;
+    border-radius: 8px;
+}
+.product-textarea1:focus-visible{
+    outline-width: 0 !important;
+}
+.comment-bottom-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 22px;
+}
+.add-image-sec {
+    position: relative;
+    width: 149px;
+    height: 32px;
+}
+.add-image-sec:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url(../svg/add-image.svg);
+    background-repeat: no-repeat;
+    top: 12px;
+    left: 12px;
+}
+.add-video-sec:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url(../svg/add-video.svg);
+    background-repeat: no-repeat;
+    top: 12px;
+    left: 8px;
+}
+.add-image {
+    width: 149px;
+    height: 42px;
+    background: #F6F8FA;
+    border-radius: 4px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+#image-label, #video-label {
+    display: none;
+}
+.review-second-sec-full h1 {
+    color: #000;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.review-second-sec-full p {
+    color:#707070;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 16px;
+}
+.review-cancel-btn a {
+    border-radius: 8px;
+    background:#F0F0F0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.review-submit-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background:#FF4C3B;
+    color:#FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.review-fourth-sec-full {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.review-cancel-btn,
+.review-submit-btn {
+    width: 100%;
+    height: 48px;
+    display: inline-grid;
+}
+
+/*------------------------------------- 50.Wallet Screen -------------------------------------*/
+.Wallet-first-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wallet-price1 {
+    color: #FF4C3B;
+    text-align: right;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.wallet-title {
+    color:#000;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+.wallet-txt2 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 16px;
+}
+.search-text1 {
+    color:#707070;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    background:#F0F0F0;
+    border: none;
+}
+.search-text1:focus{
+    box-shadow: none !important;
+    background: #F0F0F0 !important;
+}
+.search-text1::placeholder {
+    color: #707070;
+}
+.wallet-txt3 {
+    color:#707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 24px;
+}
+.check-select-mode input[type="radio"] {
+    display: none;
+}
+.payment-custom-radio {
+    width: 70px;
+    height: 49px;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid rgba(30, 41, 59, 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.payment-method-checkoutpage-full {
+    display: flex;
+    column-gap: 8px;
+    margin-left: 16px;
+    padding-right: 16px;
+}
+.add-btn-wallet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: white;
+    bottom: 0;
+    padding-bottom: 16px;
+    left: 0;
+    right: 0;
+}
+#walltet-screen {
+    margin-bottom: 80px;
+}
+.iti__selected-dial-code{
+    display: none;
+}
+.iti--separate-dial-code .iti__selected-flag{
+    background-color: transparent !important;
+}
+.iti__selected-flag{
+    padding: 0 !important;
+}
+.iti__selected-flag:focus-visible{
+    outline-width: 0 !important;
+}
+
+/*------------------------------------- 51.Preloader -------------------------------------*/
+.circle {
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  position:absolute;
+  margin:auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 4px solid white;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  animation: spin 1s linear infinite;
+}
+.loader-mask,
+.loader-mask1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999;
+}
+.setting-border {
+    border-bottom: 1px solid rgb(0 0 0 / 8%);
+}
+
+/*------------------------------------- 52.Tabbar CSS -------------------------------------*/
+nav {
+  display: flex;
+  align-items: center;
+  background: #ff4c3b;
+  width: 100%;
+  height: 56px;
+  border-radius:28px;
+  justify-content: space-between;
+  column-gap: 24px;
+  box-shadow: 0px 24px 12px -20px rgb(78 78 78 / 80%);
+}
+.bottom-tabbar a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+}
+.bottom-tabbar a svg {
+  width: 18px;
+  height: 18px;
+  transition: margin 0.2s ease-out;
+}
+.bottom-tabbar a span {
+  opacity: 0;
+  display: none;
+}
+.bottom-tabbar a.active {
+  background: white;
+  color:#242424;
+  padding-left: 12px;
+  padding-right: 22px;
+}
+.bottom-tabbar a.active svg {
+  margin-right: 0;
+}
+.bottom-tabbar a.active span {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-out;
+  color:#141414;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  margin-left: 12px;
+  display:block;
+}
+.bottom-tabbar a.active img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+.bottom-tabbar a:first-child {
+    margin-left: 12px;
+}
+.bottom-tabbar a:last-child
+{
+    margin-right: 12px;
+}
+.bottom-tabbar-full {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    z-index: 99;
+}
+
+/************************ 53.Datepiker CSS ***************************/
+.custom-input-home3-form::placeholder{
+    color: white;
+}
+#ui-datepicker-div {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1);
+    margin-top: 0.25rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.ui-datepicker-calendar thead th {
+    padding: 0.25rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #78909C;
+}
+.ui-datepicker-calendar tbody td {
+    width: 2.5rem;
+    text-align: center;
+    padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+    display: block;
+    border-radius: 0.25rem;
+    line-height: 2rem;
+    transition: 0.3s all;
+    color: #546E7A;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {
+   background: rgb(255 76 59 / 8%);
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+    background-color: #FF4C3B;
+    color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+    background-color: #ECEFF1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {
+    left: 0;
+    background: url(../images/payment-icon/cal-icon.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 50%;
+    transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+    right: 0;
+    background: url(../images/payment-icon/cal-icon.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 50%;
+}
+.ui-datepicker-header a>span {
+    display: none;
+}
+.ui-datepicker-title {
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.ui-datepicker-week-col {
+    color: #78909C;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+.custom-select {
+    background: url(../images/Homepage3/form-arrow.svg) no-repeat;
+    background-position: 96% center;
+    appearance: none;
+    color: #FFF;
+    font-size: 18px;
+    font-family: Lexend;
+    line-height: 24px;
+    width: 350px;
+    height: 64px;
+    border: 1px solid #FFDE9F;
+    padding: 20px;
+}
+.date-sec-card {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+/************************ 54.Feedback Screen CSS ***************************/
+.feedback-sec-txt{
+    border-radius: 8px;
+    background: #F0F0F0;
+    padding: 12px;
+    display: flex;
+    border: none;
+    margin-top: 8px;
+    width: 100%;
+    padding-left: 12px;
+    color: #707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+}
+label.feedback-lbl {
+    color: #000;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.arrow-icon {
+    background: url(../svg/faq-up.svg) no-repeat;
+    width: 100%;
+    border: navajowhite;
+    background-position: 96% center;
+    font-size: 18px;
+    appearance: none;
+    color: #707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 12px;
+}
+.menupage1-form-custom option {
+    color: #000;
+    font-size: 18px;
+    font-family: Lato;
+    line-height: 24px;
+    background: #F0F0F0;
+}
+.arrow-icon:focus-visible{
+    outline-width: 0 !important;
+}
+.feedback-tp:focus-visible{
+   outline-width: 0 !important;
+}
+.menupage1-form-custom {
+    width: 100%;
+    border: navajowhite;
+    color: #707070;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background: #F0F0F0;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+.feedback-btn {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 16px;
+    background: white;
+    left: 0;
+    right: 0;
+}
+.feedback-tp{
+    margin-top: 8px;
+    color:#707070;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+    resize: none;
+    height: 135px;
+    border: none;
+    padding: 16px;
+    background: #F0F0F0;
+    border-radius: 8px;
+}
+#feedback-screen{
+    margin-bottom: 80px;
+}
+
+/************************ 55.Finger Print Loader Screen CSS ***************************/
+.sk-fading-circle {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sk-fading-circle .sk-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sk-fading-circle .sk-circle:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+  animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+}
+.sk-fading-circle .sk-circle2 {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.sk-fading-circle .sk-circle3 {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.sk-fading-circle .sk-circle4 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.sk-fading-circle .sk-circle5 {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.sk-fading-circle .sk-circle6 {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+.sk-fading-circle .sk-circle7 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.sk-fading-circle .sk-circle8 {
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+.sk-fading-circle .sk-circle9 {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.sk-fading-circle .sk-circle10 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.sk-fading-circle .sk-circle11 {
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.sk-fading-circle .sk-circle12 {
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+.sk-fading-circle .sk-circle2:before {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.sk-fading-circle .sk-circle3:before {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+.sk-fading-circle .sk-circle4:before {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.sk-fading-circle .sk-circle5:before {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+.sk-fading-circle .sk-circle6:before {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+.sk-fading-circle .sk-circle7:before {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+.sk-fading-circle .sk-circle8:before {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.sk-fading-circle .sk-circle9:before {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.sk-fading-circle .sk-circle10:before {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+.sk-fading-circle .sk-circle11:before {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+.sk-fading-circle .sk-circle12:before {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+.theme-btn.active .dark,
+.theme-color.active .dark {
+    display: none;
+}
+.theme-btn .light,
+.theme-color .light {
+    display: none;
+}
+.theme-btn.active .light, .theme-color.active .light {
+    display: inline-block;
+}
+.bg-pink.light svg path {
+    fill: #FF4C3B;
+}
+
+
+
+
+
+
+
+
+
+
